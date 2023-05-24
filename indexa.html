@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Регистрация</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="log">
+                        <input type="text" placeholder="Логин" name="uname" required><br>
+                        <input type="password" placeholder="Пароль" name="psw" required>
+                    </div>
+                    <div class="ok"><a href="">Войти</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="standing1"></div>
+    <div class="whole">
+        <a href="#UPPER"><div class="arrowup"></div></a>
+        <div class="arrrad"></div>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fa fa-home"></i></label>
+        <div class="reg">
+            <p><a href="#openModal">Регистрация</a></p>
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.html" class="menuitem">Главная</a></li>
+                <li><a href="indexa.html" class="menuitem">Агенты</a></li>
+                <li><a href="indexmaps.html" class="menuitem">Карты</a></li>
+                <li><a href="#" class="menuitem">Аим</a></li>
+                <li><a href="#" class="menuitem">Стратегия</a></li>
+            </ul>
+        </div>
+        <header>
+            <h1>VL<span class="neon">T</span>ra<span class="neon2">i</span>ner</h1>
+        </header>
+        <article>
+            <h2 id="UPPER">Агенты:</h2>
+            <div class="duelists">
+                <input type="checkbox" id="menu1">
+                <label for="menu1"> <img
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt213441880cf2cdf5/5eaa06851b51e36d7c1b61d4/Duelist.png"
+                        width="40px" /> Дуэлянты <span class="click"></span></label>
+                <div class="menu-content1">
+                    <div class="navdul">
+                        <ul>
+                            <li><a href="#JETT">Jett</a></li>
+                            <li><a href="#NEON">Neon</a></li>
+                            <li><a href="#PHOE">Phoenix</a></li>
+                            <li><a href="#RAZE">Raze</a></li>
+                            <li><a href="#REYNA">Reyna</a></li>
+                            <li><a href="#YORU">Yoru</a></li>
+                        </ul>
+                    </div>
+                    <div class="jettagent">
+                        <div class="cont">
+                            <div class="ico1"></div>
+                            <p id="JETT">Jett</p>
+                        </div>
+                        <p class="ordinary">
+                            Представляющая Южную Корею Jett быстра и неуловима и может позволить
+                            себе рисковать чаще других. В любой стычке она заходит с флангов и быстро уничтожает
+                            растерявшегося противника.
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ПОДЪЕМ" <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltce7928301a67a33a/5eaf861103f6e72ff388cc20/TX_Jett_Q.png"
+                                    width="40px" /> <br>
+                                <span class="ordinary"> Jett МГНОВЕННО взлетает в воздух.</span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Jett_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ПОПУТНЫЙ ВЕТЕР" <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta0beeaa4a7e1ed78/5eaf8611b8a6356e4ddc1013/TX_Jett_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Вызывает кратковременный порыв ветра. Используйте умение
+                                    повторно,
+                                    чтобы Jett совершила рывок в направлении своего движения. Если Jett стоит на
+                                    месте,
+                                    то
+                                    она делает рывок вперед.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Jett_E_rework_web.mp4"
+                                    loop="loop"></video>
+
+                            </p>
+                            <p class="left">C – "ВИХРЬ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf137993847c71770/5eaf8611d4b10d15d3e8db4e/TX_Jett_C.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО бросает снаряд, превращающийся в ненадолго
+                                    закрывающее
+                                    обзор облако при столкновении с поверхностью. УДЕРЖИВАЙТЕ клавишу умения,
+                                    чтобы
+                                    менять
+                                    направление движения дыма с помощью прицела.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Jett_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "БУРЯ КЛИНКОВ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb3e956f9fb96318e/5eaf86112b79652f27c32a06/TX_Jett_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Вооружается набором высокоточных кинжалов, которые
+                                    перезаряжаются
+                                    после ликвидации противника. Нажмите кнопку ОГОНЬ, чтобы бросить один кинжал
+                                    в вашу
+                                    цель. Нажмите кнопку АЛЬТ. ОГОНЬ, чтобы бросить в цель все оставшиеся
+                                    кинжалы.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Jett_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="neonagent">
+                        <div class="cont">
+                            <div class="ico2"></div>
+                            <p id="NEON">Neon</p>
+                        </div>
+                        <span class="ordinary">Филиппинка Neon способна невероятно быстро передвигаться
+                            благодаря
+                            биоэлектрическим импульсам, которые генерирует ее тело. Это позволяет ей заставать
+                            врагов врасплох и расправляться с ними быстрее молнии.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q - "ПРЫГАЮЩИЙ СНАРЯД"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt10d37aa745665f36/61d8a80814ef402247ceab30/Neon_Q-Relay_Bolt.png"
+                                    width="40px" /> <br>
+                                <span class="ordinary">МГНОВЕННО бросает энергетический снаряд, который отскакивает от
+                                    поверхности один раз. Когда снаряд касается поверхности, земля под ним электризуется
+                                    и происходит оглушающий взрыв.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;"
+                                src="vid/VAL_Neon_Ability-Q_Preview_Stun_noHUD_Web_h264.mp4" muted loop="loop"></video>
+                            <p class="right">E - "ПОВЫШЕННАЯ СКОРОСТЬ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc7f73a2cfc4e3e44/61d8a8181757dc6aed2ada7c/Neon_E-High_Gear.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО накапливает заряд для повышения скорости. Находясь в
+                                    заряженном состоянии, нажмите кнопку АЛЬТ. ОГОНЬ, чтобы проскользить. Перезарядка
+                                    скольжения сбрасывается после каждых двух убийств.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;"
+                                    src="vid/VAL_Neon_Ability-E_Preview_Sprint_noHUD_Web_h264.mp4" muted
+                                    loop="loop"></video>
+
+                            </p>
+                            <p class="left">C - "ЗАЩИТНЫЙ ТУННЕЛЬ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt50ac2316cddbb64d/61d8a8209efff26ae759809a/Neon_C-Fast_Lane.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">ЗАПУСКАЕТ вперед по земле две параллельных линии подачи энергии.
+                                    Линии простираются на небольшое расстояние или до ближайшей поверхности, после чего
+                                    образуют два энергетических барьера, которые блокируют обзор и наносят урон
+                                    проходящим сквозь них врагам.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;"
+                                src="vid/VAL_Neon_Ability-C_Preview_Walls_noHUD_Web_h264.mp4" muted loop="loop"></video>
+                            <p class="right">X - "НА ПОЛНУЮ МОЩЬ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltcf74e9670f324266/61d8a829997c0e224de09fae/Neon_X-Overdrive.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">В течение короткого времени Neon использует всю свою энергию и
+                                    скорость. Нажмите кнопку ОГОНЬ, чтобы преобразовать энергию в смертоносный
+                                    электрический луч высокой точности. Время действия умения продлевается после каждого
+                                    убийства.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;"
+                                    src="vid/VAL_Neon_Ability-X_Preview_Ult_noHUD_Web_h264.mp4" muted
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="phoenixagent">
+                        <div class="cont">
+                            <div class="ico3"></div>
+                            <p id="PHOE">Phoenix</p>
+                        </div>
+                        <span class="ordinary">Представитель Великобритании Phoenix демонстрирует звездную силу
+                            во
+                            всех аспектах своего боевого стиля: он сражается красиво и ярко, всегда навязывает
+                            противнику свои условия и отважно устремляется в бой даже без поддержки.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "КРУЧЕНАЯ ПОДАЧА"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb125dfdcd673a9a8/5eaf85e95751b2150e57a803/TX_Pheonix_Q.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> Выбирает ослепляющую сферу, летящую по дуге и
+                                    взрывающуюся
+                                    вскоре
+                                    после броска. При взрыве сфера ослепляет всех игроков, смотревших на нее в
+                                    момент
+                                    взрыва. Нажмите кнопку ОГОНЬ, чтобы загнуть дугу сферы влево, и кнопку АЛЬТ.
+                                    ОГОНЬ –
+                                    вправо.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Phoenix_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ГОРЯЧИЕ РУКИ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb239d633e68d9b65/5eaf85e94398082ffe240195/TX_Pheonix_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает огненный шар. Нажатием кнопки ОГОНЬ выпускается
+                                    огненный
+                                    шар, который взрывается после задержки или при падении на землю, создавая
+                                    охваченную
+                                    огнем область, наносящую урон противникам.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Phoenix_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ПЕКЛО"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt40cafc8e39b4fcbd/5eaf85e903f6e72ff388cc1a/TX_Pheonix_C.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает огненную стену. Нажатием кнопки ОГОНЬ вперед
+                                    выпускается
+                                    пламя, образующее стену огня. Она заслоняет обзор и наносит урон проходящим
+                                    через
+                                    нее
+                                    игрокам. УДЕРЖИВАЙТЕ КНОПКУ ОГОНЬ, чтобы изогнуть стену в сторону прицела.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Phoenix_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ВОЗВРАТ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt26ed15b080ee68b1/5eaf85e91b51e36d7c1b6ad0/TX_Pheonix_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО помечает текущую позицию Phoenix. Если время
+                                    действия
+                                    умения истекает или если Phoenix погибает, пока оно действует, то он
+                                    воскресает в
+                                    точке,
+                                    где начал применять умение, с полным запасом здоровья.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Phoenix_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="razeagent">
+                        <div class="cont">
+                            <div class="ico4"></div>
+                            <p id="RAZE">Raze</p>
+                        </div>
+                        <span class="ordinary">Raze – мастер взрывного дела из Бразилии, обладательница сильного
+                            характера и еще более мощных пушек. Она способна легко справиться с засевшими в
+                            обороне
+                            противниками или зачистить небольшое помещение. Громко и без лишних
+                            церемоний.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ВЗРЫВНОЙ РАНЕЦ"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltdb74f287eee9fe76/5eaf862a248a28605479c91f/TX_Raze_Q.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> МГНОВЕННО бросает взрывной ранец, прикрепляющийся к
+                                    поверхностям.
+                                    Используйте умение повторно, чтобы взорвать ранец, нанося урон и отталкивая
+                                    находящихся
+                                    рядом агентов. Raze не получает прямого урона от этого умения, но может
+                                    пострадать
+                                    при
+                                    падении, если ранец подбросит ее достаточно высоко в воздух.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Raze_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "КАССЕТНАЯ ГРАНАТА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb0eb89e122c1f4ea/5eaf862ad238e314f259fa8b/TX_Raze_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает кассетную гранату. Нажмите кнопку ОГОНЬ, чтобы
+                                    бросить
+                                    гранату, которая взрывается, наносит урон и выпускает гранаты поменьше,
+                                    наносящие
+                                    урон
+                                    любому агенту в радиусе поражения.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Raze_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "БОМБОТРОН"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt44acc030d4d60182/5eaf862aa20afe612d82fb4e/TX_Raze_C.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает "Бомботрон". Нажмите кнопку ОГОНЬ, чтобы
+                                    выпустить его.
+                                    "Бомботрон" двигается по прямой и отскакивает от стен. При обнаружении цели
+                                    "Бомботрон"
+                                    мчится к ней по прямой и взрывается, нанося большой урон при столкновении.
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Raze_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ГАСИМ СВЕЧИ!"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt60023b671f330740/5eaf862ae6f6795e530a2717/TX_Raze_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает ракетомет. Нажмите кнопку ОГОНЬ, чтобы выпустить
+                                    ракету,
+                                    наносящую огромный урон по большой области при контакте.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Raze_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reynaagent">
+                        <div class="cont">
+                            <div class="ico5"></div>
+                            <p id="REYNA">Reyna</p>
+                        </div>
+                        <span class="ordinary">Выросшая в самом сердце Мексики Reyna способна одолеть любого в
+                            бою
+                            один на один, и убийства придают ей сил. Ее мощь ограничена лишь мастерством и очень
+                            зависит от успехов в бою.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ПОГЛОЩЕНИЕ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf10078de1865cc3a/5eb7cf1e241e5e628430676c/TX_Reyna_Q.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> Когда Reyna убивает противника, на 3 секунды появляется
+                                    сфера
+                                    души.
+                                    Reyna МГНОВЕННО поглощает находящуюся поблизости сферу души, быстро
+                                    восполняя
+                                    здоровье.
+                                    При чрезмерном исцелении и превышении показателя в 100 лишнее здоровье
+                                    постепенно
+                                    рассеивается. Умение используется автоматически и не поглощает сферу во
+                                    время
+                                    действия
+                                    умения "ИМПЕРАТРИЦА".</span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid//Reyna_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ИЗГНАНИЕ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7f61a763092dca17/5eb7cf1e7e251a2d4a46fdb3/TX_Reyna_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО поглощает находящуюся поблизости сферу души,
+                                    что дает
+                                    неуязвимость на 2 секунды. Во время действия умения "ИМПЕРАТРИЦА" также дает
+                                    невидимость.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Reyna_E_v002_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ЗЛОБНЫЙ ВЗГЛЯД"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1df6153d75480d43/5eb7cf1e8682422a765fc997/TX_Reyna_C.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает призрачный глаз. ПРИ АКТИВАЦИИ бросает глаз на
+                                    близкое
+                                    расстояние. Глаз ограничивает обзор всех противников, которые посмотрят на
+                                    него.
+                                    Глаз
+                                    можно уничтожить.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Reyna_C_v002_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ИМПЕРАТРИЦА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte8a8889d3b17a9b9/5eb7cf1e1ea0c32e33b95fa6/TX_Reyna_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">СРАЗУ ЖЕ впадает в бешенство, повышая скорость стрельбы и
+                                    обращения с
+                                    оружием. При каждом убийстве время действия умения продлевается.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Reyna_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="yoruagent">
+                        <div class="cont">
+                            <div class="ico6"></div>
+                            <p id="YORU">Yoru</p>
+                        </div>
+                        <span class="ordinary">Уроженец Японии Yoru способен создавать разрывы в самой
+                            реальности,
+                            чтобы незаметно пробираться на вражескую территорию. Сила и хитрость позволяют ему
+                            заставать врагов врасплох – они даже не успеют понять, откуда пришла смерть.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ОШЕЛОМЛЕНИЕ"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt54759b7874fbd40c/5ff5681bb47cdf7fc7d6c3e6/Yoru_Anility_Icons_512x512_Q.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> Нажмите кнопку умения, чтобы вырвать нестабильный
+                                    фрагмент
+                                    реальности. Нажмите кнопку ОГОНЬ, чтобы бросить фрагмент. При столкновении
+                                    фрагмента
+                                    с
+                                    твердой поверхностью возникает ослепляющая вспышка.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid//Yoru_Abilities_Blinding_1_1.mp4"
+                                loop="loop" muted></video>
+                            <p class="right">E – "НЕЗВАНЫЙ ГОСТЬ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5427236bf8a82b05/5ff5685e1166ce7d2ed1bd5d/yoru_ability_icons_52x512_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает нить портала. Нажмите кнопку ОГОНЬ, чтобы
+                                    послать портал
+                                    вперед, или АЛЬТ. ОГОНЬ, чтобы разместить неподвижную нить. Телепортируйтесь
+                                    по нити
+                                    с
+                                    помощью кнопки умения. Чтобы имитировать телепорт, нажмите кнопку
+                                    ИСПОЛЬЗОВАТЬ.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;"
+                                    src="vid/Website_Yoru_Rework_Gatecrash_v2.mp4" loop="loop" muted></video>
+                            </p>
+                            <p class="left">C – "ПРИМАНКА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3ffa0e1858916cb8/622159a1c56d222d0cb0cc12/TX_Yoru_Fakeout.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает эхо, которое при активации создает зеркальное
+                                    отражение
+                                    Yoru. Нажмите кнопку ОГОНЬ, чтобы послать эхо вперед, или АЛЬТ. ОГОНЬ, чтобы
+                                    разместить
+                                    неподвижное эхо. Чтобы послать эхо вперед, нажмите кнопку ИСПОЛЬЗОВАТЬ.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;"
+                                src="vid/Website_Yoru_Rework_Fakeout_v2.mp4" loop="loop" muted></video>
+                            <p class="right">X – "ПРОСТРАНСТВЕННЫЙ ДРИФТ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceb6f71853fa7be7/5ff568b3396e65084a9e8c7c/Yoru_Anility_Icons_512x512_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает маску, которая позволяет смотреть сквозь
+                                    измерения.
+                                    Нажмите
+                                    кнопку ОГОНЬ, чтобы переместиться в измерение, в котором Yoru неуязвим и
+                                    невидим для
+                                    врагов.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;"
+                                    src="vid/Website_Yoru_Rework_Dimensional_Drift_v2.mp4" loop="loop" muted></video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="initiators">
+                <input type="checkbox" id="menu2">
+                <label for="menu2"> <img
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2965c8a8dce0467d/5eaa0685e6f6795e530a1cbe/Initiator.png"
+                        width="40px" /> Зачинщики <span class="click"></span></label>
+                <div class="menu-content2">
+                    <div class="navini">
+                        <ul>
+                            <li><a href="#BREACH">Breach</a></li>
+                            <li><a href="#FADE">Fade</a></li>
+                            <li><a href="#GEKKO">Gekko</a></li>
+                            <li><a href="#KAYO">KAY/O</a></li>
+                            <li><a href="#SKYE">Skye</a></li>
+                            <li><a href="#SOVA">Sova</a></li>
+                        </ul>
+                    </div>
+                    <div class="breachagent">
+                        <div class="cont">
+                            <div class="ico7"></div>
+                            <p id="BREACH">Breach</p>
+                        </div>
+                        <p class="ordinary">
+                            Использующий бионические усиления швед Breach полагается на мощные направленные взрывы,
+                            чтобы расчистить путь от агентов противника. Разрушительная сила его умений позволяет
+                            получить решающее преимущество в любом бою.
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ОСЛЕПЛЯЮЩИЙ ЗАРЯД" <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf7b0c621601e5577/5eaf863af66b2515dea76b40/TX_Breach_Q.png"
+                                    width="40px" /> <br>
+                                <span class="ordinary">Выбирает ослепляющий заряд. Нажмите кнопку ОГОНЬ, чтобы запустить
+                                    его через стену. Заряд ослепит всех смотрящих в его сторону игроков.</span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Breach_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ТРЕЩИНА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt40b144165bebbb57/5eaf863aa20afe612d82fb54/TX_Breach_E.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает сейсмический заряд. УДЕРЖИВАЙТЕ КНОПКУ ОГОНЬ, чтобы
+                                    увеличить дальность разлома. ОТПУСТИТЕ, чтобы создать разлом, оглушающий всех
+                                    игроков в зоне поражения.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/Breach_E_v001_web.mp4"
+                                    loop="loop"></video>
+
+                            </p>
+                            <p class="left">C – "ПРОБИВНОЙ УДАР"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd59235294cc21d88/5eaf863acf88d36e47cf02b1/TX_Breach_C.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает взрывной заряд. Нажмите кнопку ОГОНЬ, чтобы запустить
+                                    заряд через стену и создать взрыв на другой стороне. Взрыв наносит серьезный урон
+                                    всем, кто попадает в зону поражения.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" src="vid/Breach_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "РАСКАТ ГРОМА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb39bc3e8df9012dc/5eaf863ad238e314f259fa93/TX_Breach_X.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ сейсмическую волну. Нажмите кнопку ОГОНЬ, чтобы
+                                    запустить цепочку взрывов в обширной области перед собой. Эти взрывы оглушают и
+                                    подбрасывают в воздух все на своем пути.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" preload=" metadata"
+                                    src="vid/Breach_X_v001_web.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fadeagent">
+                        <div class="cont">
+                            <div class="ico8"></div>
+                            <p id="FADE">Fade</p>
+                        </div>
+                        <span class="ordinary">Турчанка Fade, охотница за головами, связала свою жизнь с Кошмаром и
+                            научилась читать врагов как открытые книги с помощью силы этого существа. Впустив в свое
+                            сердце кромешную тьму, она получила способность раскрывать чужие страхи и сводить жертву с
+                            ума.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ЗАХВАТ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt80d49ffb1f533029/625db8131574214ead41fc2f/Fade_-_Q_-_Seize.png"
+                                    width="40px" /> <br>
+                                <span class="ordinary">Выбирает чернильную сферу. Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    ее. Спустя некоторое время сфера падает на землю, после чего взрывается и образует
+                                    область-ловушку, из которой трудно выбраться. Используйте умение повторно, чтобы
+                                    уронить сферу до того, как она сама упадет.
+                                </span>
+                            </p>
+                            <video class="demo" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" preload=" metadata"
+                                src="vid/Q-seize_video_NEW.mp4" muted loop="loop"></video>
+                            <p class="right">E – "ПРИЗРАК"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltff792b334e149272/625db875fd9afd4b1fe2fbf2/Fade_-_E_-_Haunt.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает кошмарную сущность. Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    сферу. Спустя некоторое время сфера падает на землю, после чего превращается в
+                                    кошмарную сущность, которая раскрывает местоположение всех противников, попавших в
+                                    ее поле зрения. Противники могут уничтожить кошмарную сущность. Используйте умение
+                                    повторно, чтобы уронить сферу до того, как она сама упадет.
+                                </span><br>
+                                <video class="demo" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" preload=" metadata" muted
+                                    src="vid/E-Haunt_video.mp4" loop="loop"></video>
+
+                            </p>
+                            <p class="left">C – "ХИЩНИК"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc12f51743ac56940/625db87d7e7b344b2534f838/Fade_-_C_-_Prowler.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает хищника. Нажмите кнопку ОГОНЬ, чтобы послать хищника
+                                    вперед по прямой траектории. Хищник фокусируется на всех противниках и следах в поле
+                                    своего зрения и начинает охоту, ограничивая обзор пойманных целей. Удерживайте
+                                    кнопку ОГОНЬ, чтобы хищник двигался в направлении вашего прицела.
+                                </span>
+                            </p>
+                            <video class="demo" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/C-Prowler_video.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ТЬМА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70f96353cf61d295/625db8887e7b344b2534f83c/Fade_-_X_-_Nightfall.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает силу страха. Нажмите кнопку ОГОНЬ, чтобы создать волну
+                                    энергии Кошмара, проходящую сквозь стены. Эта энергия оглушает противника и наносит
+                                    ему периодический урон, а также раскрывает путь к нему.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" src="vid/X-Nightfall_Video.mp4" muted
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gekkoagent">
+                        <div class="cont">
+                            <div class="ico9"></div>
+                            <p id="GEKKO">Gekko</p>
+                        </div>
+                        <span class="ordinary">Gekko из Лос-Анджелеса заправляет дружной командой безбашенных существ.
+                            Его верные зверята смело бросаются в драку, разнося врагов в пух и прах. А когда Gekko
+                            подбирает питомцев с поля боя, можно перевести дух и повторить!</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "БЕГУН"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt84c8955357322ecd/64027318ec12cd34d0060449/Gekko_ability_Icon_Wingman_.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ Бегуна. Нажмите ОГОНЬ, чтобы отправить Бегуна вперед
+                                    искать противников. Бегун высвобождает энергию в сторону первого увиденного врага,
+                                    совершая оглушающий взрыв. Нажмите АЛЬТ. ОГОНЬ, нацелившись на точку установки Spike
+                                    или на установленный Spike, чтобы Бегун установил или обезвредил его. Spike должен
+                                    быть в инвентаре Gekko, чтобы Бегун мог его установить. Когда энергия заканчивается,
+                                    Бегун превращается в шарик и бездействует. ВЗАИМОДЕЙСТВУЙТЕ с шариком, чтобы забрать
+                                    его, и спустя короткое время Бегун получит новый заряд энергии.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted
+                                src="vid/Website_Gekko_Wingman_Q_FNL.mp4" loop="loop"></video>
+                            <p class="right">E – "КЛЯКСА"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt09558f0cb6be03a3/6402737a27ccd11087ac6a70/Gekko_ability_Icon_3.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ Кляксу. Нажмите ОГОНЬ, чтобы запустить Кляксу высоко в
+                                    воздух и послать ее вперед. Зарядившись, Клякса запускает взрывающиеся сгустки
+                                    плазмы в сторону противников в зоне видимости. Когда энергия заканчивается, Клякса
+                                    превращается в шарик и бездействует. ВЗАИМОДЕЙСТВУЙТЕ с шариком, чтобы забрать его,
+                                    и спустя короткое время Клякса получит новый заряд энергии.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Website_Gekko_Dizzy_E.mp4" loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ТЫДЫЩ"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb04bcc15680583e4/640273e5aa6c3f7f594bd1cf/Gekko_icon_mosh.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ Тыдыща. Нажмите ОГОНЬ, чтобы бросить Тыдыща, как
+                                    гранату. Нажмите АЛЬТ. ОГОНЬ, чтобы сделать бросок снизу. Коснувшись поверхности,
+                                    Тыдыщ разделяется, покрывая большую площадь, и после небольшой задержки взрывается.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Website_Gekko_C_FNL.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "БАБАХ"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb24321feccb0cb69/6402740fba95fe6a2554b0b5/Gekko_ability_icon_4.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ Бабах. Нажмите ОГОНЬ, чтобы установить мысленную связь с
+                                    Бабах и управлять ее передвижением по вражеской территории. Нажмите кнопку
+                                    АКТИВАЦИИ, чтобы Бабах сделала рывок вперед и устроила взрыв, замедлив врагов на
+                                    небольшом расстоянии от себя. Когда энергия заканчивается, Бабах превращается в
+                                    шарик и бездействует. ВЗАИМОДЕЙСТВУЙТЕ с шариком, чтобы забрать его, и спустя
+                                    короткое время Бабах получит новый заряд энергии. Повторный заряд Бабах можно
+                                    использовать только один раз.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Website_Gekko_Thrash_X.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="kayoagent">
+                        <div class="cont">
+                            <div class="ico10"></div>
+                            <p id="KAYO">KAY/O</p>
+                        </div>
+                        <span class="ordinary">KAY/O – боевая машина, созданная лишь для одной цели: истребить
+                            радиантов. Его способность подавлять умения врага существенно ослабляет команду противника и
+                            обеспечивает надежную защиту союзникам.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q - "СВЕТ/ОВАЯ ГРАНАТА"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt83e92ae578e66b8e/60d204231e0505677a882f38/Q_FlashDrive.png"
+                                    width="40px" /><br>
+                                <span class="ordinary"> Выбирает ослепляющую гранату. Нажмите кнопку ОГОНЬ, чтобы
+                                    бросить ее. Граната быстро взрывается, ослепляя всех в зоне видимости.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/KAYO_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ЭПИ/ЦЕНТР"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt496288e7ab899b47/60d2018db930a53616fa4882/E_ZeroPoint.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает подавляющий клинок. Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    его. Клинок взрывается в том месте, куда приземляется, и подавляет всех в радиусе
+                                    взрыва.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/KAYO_E_v002_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ФРАГ/МЕНТ"
+                                <img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte671cefaedb07d26/60d2046483f9fe49a6fef713/C_FragMent.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает взрывоопасный фрагмент. Нажмите кнопку ОГОНЬ, чтобы
+                                    бросить его. После приземления фрагмента происходит серия взрывов, каждый из которых
+                                    наносит практически смертельный урон врагам, находящимся в самом центре.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/KAYO_C_v002_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "NULL/CMD"<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltead1f4cb9ad32e19/60d20208bcec595109d831c2/X_NullCmd.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО заряжается энергией поляризованного радианита, которая
+                                    усиливает KAY/O и вызывает мощное излучение оттуда, где он находится.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/KAYO_E_v002_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skyeagent">
+                        <div class="cont">
+                            <div class="ico11"></div>
+                            <p id="SKYE">Skye</p>
+                        </div>
+                        <span class="ordinary">Австралийка Skye и ее звериная стая прокладывают путь по враждебной
+                            территории. Ее создания затрудняют продвижение врага, а сама Skye может лечить союзников. С
+                            ней команда будет в безопасности и станет сильнее, чем когда-либо.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "СЛЕДОПЫТ"<img class="abico" src="img/Trailblazer.webp" width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ фигурку тасманийского волка. Нажмите кнопку ОГОНЬ,
+                                    чтобы вызвать хищника и управлять им. Нажмите ОГОНЬ еще раз, чтобы животное сделало
+                                    рывок вперед, вызвало оглушающий взрыв и нанесло урон пораженным врагам.</span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Val_Skye_Q_Ability_Web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ПУТЕВОДНЫЙ СВЕТ"<img class="abico" src="img/Guiding_Light.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ фигурку ястреба. Нажмите кнопку ОГОНЬ, чтобы послать
+                                    ястреба вперед. УДЕРЖИВАЙТЕ кнопку ОГОНЬ, чтобы ястреб летел в направлении вашего
+                                    прицела. Во время полета птицы используйте умение снова, чтобы ястреб превратился в
+                                    ослепляющую вспышку. Через короткое время вспышка достигает максимальной
+                                    интенсивности, пока ястреб летит.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Val_Skye_E_Ability_Web.mp4" loop="loop"></video>
+                            </p>
+                            <p class="left">C – "НОВАЯ ПОРОСЛЬ"<img class="abico" src="img/Regrowth.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ исцеляющую фигурку. УДЕРЖИВАЙТЕ кнопку ОГОНЬ, чтобы
+                                    лечить союзников в зоне видимости и действия. Можно использовать несколько раз, пока
+                                    весь запас лечения не израсходуется. Skye не может лечить себя.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Val_Skye_C_Ability_Web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ИЩЕЙКИ"<img class="abico" src="img/Seekers.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ фигурку ищеек. Нажмите кнопку ОГОНЬ, чтобы послать троих
+                                    ищеек, которые выслеживают ближайших противников. Ищейка ограничивает обзор у
+                                    найденной цели.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Val_Skye_X_Ability_Web.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sovaagent">
+                        <div class="cont">
+                            <div class="ico12"></div>
+                            <p id="SOVA">Sova</p>
+                        </div>
+                        <span class="ordinary">Рожденный в вечной мерзлоте российского заполярья, Sova выслеживает и
+                            уничтожает противников с холодной точностью и эффективностью. Этот первоклассный разведчик,
+                            экипированный особым луком, найдет вас, где бы вы ни прятались.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ШОКОВАЯ СТРЕЛА"
+                                <img class="abico" src="img/Shock_Bolt.webp" width="40px" /><br>
+                                <span class="ordinary"> Выбирает шоковую стрелу. Нажмите кнопку ОГОНЬ, чтобы выпустить
+                                    стрелу, летящую по прямой. При столкновении она срабатывает, нанося урон игрокам
+                                    поблизости. УДЕРЖИВАЙТЕ КНОПКУ ОГОНЬ, чтобы увеличить дальность выстрела. Нажатие
+                                    кнопки АЛЬТ. ОГОНЬ позволяет стреле отскакивать от стен до двух раз.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sova_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "РАЗВЕДСТРЕЛА"<img class="abico" src="img/Recon_Bolt.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает разведстрелу. Нажмите кнопку ОГОНЬ, чтобы выпустить
+                                    стрелу, летящую по прямой. При столкновении она активируется, обнаруживая
+                                    противников. УДЕРЖИВАЙТЕ КНОПКУ ОГОНЬ для увеличения дальности выстрела. Нажатие
+                                    кнопки АЛЬТ. ОГОНЬ позволяет стреле отскакивать от стен до двух раз.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sova_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ДРОН-СОВА"<img class="abico" src="img/Owl_Drone.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает дрона-сову. Нажмите кнопку ОГОНЬ, чтобы выпустить дрон и
+                                    получить контроль над его передвижением. Управляя дроном, нажмите кнопку ОГОНЬ,
+                                    чтобы выстрелить помечающим дротиком. При попадании в игрока дротик раскрывает его
+                                    позицию.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sova_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ГНЕВ ОХОТНИКА"<img class="abico" src="img/Hunters_Fury.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Выбирает три дальнобойные стрелы, пробивающие стены особым мощным
+                                    импульсом. Нажмите кнопку ОГОНЬ, чтобы выпустить импульс по прямой перед агентом,
+                                    нанося урон и раскрывая позицию всех раненых врагов. Умение можно использовать еще
+                                    два раза, пока активен таймер.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sova_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sentinels">
+                <input type="checkbox" id="menu3">
+                <label for="menu3"> <img
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt72ffc2e48d4a7a58/5eaa06852b79652f27c31ff6/Sentinel.png"
+                        width="40px" /> Стражи <span class="click"></span></label>
+                <div class="menu-content3">
+                    <div class="navsen">
+                        <ul>
+                            <li><a href="#CHAMB">Chamber</a></li>
+                            <li><a href="#CYPHER">Cypher</a></li>
+                            <li><a href="#KJ">Killjoy</a></li>
+                            <li><a href="#SAGE">Sage</a></li>
+                        </ul>
+                    </div>
+                    <div class="chamberagent">
+                        <div class="cont">
+                            <div class="ico13"></div>
+                            <p id="CHAMB">Chamber</p>
+                        </div>
+                        <p class="ordinary">
+                            Одет с иголочки и вооружен до зубов. Chamber, французский конструктор оружия, уничтожает
+                            врагов с поразительной точностью. Уникальные умения этого нового стража позволяют эффективно
+                            защищаться, нейтрализовать врагов издалека и продумывать любой план до мельчайших
+                            подробностей.
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ОХОТНИК ЗА ГОЛОВАМИ" <img class="abico" src="img/Headhunter.webp" width="40px" />
+                                <br>
+                                <span class="ordinary">Нажмите кнопку умения, чтобы выбрать тяжелый пистолет. Нажмите
+                                    кнопку АЛЬТ. ОГОНЬ, чтобы прицелиться из этого пистолета.</span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted
+                                src="vid/VAL_broll_EP03-3_Chamber_Q.mp4" loop="loop"></video>
+                            <p class="right">E – "РАНДЕВУ"<img class="abico" src="img/Rendezvous.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Размещает телепорт-якорь. Находясь на земле в зоне действия
+                                    якоря, нажмите кнопку умения повторно, чтобы телепортироваться к нему. Якорь можно
+                                    подобрать и разместить заново.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Chamber_E_rework_web.mp4" loop="loop"></video>
+
+                            </p>
+                            <p class="left">C – "КОРОННЫЙ ПРИЕМ"<img class="abico" src="img/Trademark.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Размещает ловушку. Когда рядом оказывается противник, ловушка
+                                    срабатывает после короткой задержки и дестабилизирует небольшую область, враги в
+                                    которой замедляются. Ловушку можно подобрать и разместить заново.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Chamber_C_rework_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ДЕМОНСТРАЦИЯ СИЛЫ"<img class="abico" src="img/Tour_De_Force.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Нажмите кнопку умения, чтобы выбрать особо мощную снайперскую
+                                    винтовку, из которой можно убить врага любым прямым попаданием в верхнюю часть тела.
+                                    На месте гибели противника возникает поле, замедляющее игроков в его пределах.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Chamber_X_rework_web.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cypheragent">
+                        <div class="cont">
+                            <div class="ico14"></div>
+                            <p id="CYPHER">Cypher</p>
+                        </div>
+                        <span class="ordinary">Торговец информацией из Марокко Cypher может самостоятельно создать
+                            целую информационную сеть для отслеживания действий противника. Под неусыпным взором Cypher
+                            все тайное становится явным.</span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "КИБЕРКЛЕТКА"<img class="abico" src="img/Cyber_Cage.webp" width="40px" /> <br>
+                                <span class="ordinary">МГНОВЕННО бросает клетку перед Cypher. АКТИВИРУЙТЕ ее, чтобы
+                                    ограничить обзор противников. Клетка издает особый звук, когда через нее проходят
+                                    противники.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Cypher_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "КАМЕРА"<img class="abico" src="img/Spycam.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ шпионскую камеру. Нажмите кнопку ОГОНЬ, чтобы поместить
+                                    камеру на выбранном месте. Используйте умение снова, чтобы управлять ей. Во время
+                                    управления камерой нажмите кнопку ОГОНЬ, чтобы выстрелить отслеживающим дротиком.
+                                    При попадании в игрока дротик отмечает его местонахождение.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Cypher_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "РАСТЯЖКА"<img class="abico" src="img/Trapwire.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ растяжку. Нажмите кнопку ОГОНЬ, чтобы установить в
+                                    выбранном месте незаметную растяжку, соединяемую с противоположной стеной. Попавшие
+                                    в нее противники задерживаются и ненадолго обнаруживают себя, а через некоторое
+                                    время оглушаются. Растяжку можно снять и использовать ПОВТОРНО. Враги могут
+                                    уничтожить ее.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Cypher_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "НЕЙРОКРАЖА"<img class="abico" src="img/Neural_Theft.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">При МГНОВЕННОМ использовании на мертвом противнике вы получаете
+                                    информацию о вражеской команде. Через некоторое время будет дважды показано
+                                    местоположение всех живых соперников.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Cypher_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="kjagent">
+                        <div class="cont">
+                            <div class="ico15"></div>
+                            <p id="KJ">Killjoy</p>
+                        </div>
+                        <span class="ordinary">Гений из Германии. Killjoy легко защищает территорию на поле боя с
+                            помощью своего арсенала изобретений. Если противника не остановит урон от ее устройств, то
+                            наносимые ими эффекты ослабления помогут Killjoy легко с ним справиться.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ТРЕВОГОБОТ"
+                                <img class="abico" src="img/Alarmbot.webp" width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ замаскированного бота-паука. Нажмите кнопку ОГОНЬ,
+                                    чтобы выпустить бота, который атакует противников, оказавшихся в его радиусе
+                                    действия. Достигнув цели, бот взрывается и делает противников в области взрыва
+                                    уязвимыми. УДЕРЖИВАЙТЕ кнопку умения, чтобы отозвать бота.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/AlarmBot_LowQuality.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ТУРЕЛЬ"<img class="abico" src="img/Turret.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ турель. Нажмите кнопку ОГОНЬ, чтобы установить турель,
+                                    которая автоматически отслеживает противников в 180-градусном секторе. Нажмите
+                                    кнопку АЛЬТ. ОГОНЬ, чтобы изменить направление турели. УДЕРЖИВАЙТЕ кнопку умения,
+                                    чтобы отозвать турель.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Turret_LowQuality.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "НАНОРОЙ"
+                                <img class="abico" src="img/Nanoswarm.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ гранату "Улей". Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    гранату. После приземления граната маскируется. Нажмите кнопку АЛЬТ. ОГОНЬ, чтобы
+                                    сделать бросок снизу. АКТИВИРУЙТЕ "Улей", чтобы выпустить рой наносящих урон
+                                    наноботов.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Grenade_LowQuality.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "БЛОКИРОВКА"<img class="abico" src="img/Lockdown.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ генератор поля блокировки. Нажмите кнопку ОГОНЬ, чтобы
+                                    установить генератор. Задерживает всех противников, находящихся в радиусе действия.
+                                    Противники могут вывести генератор из строя.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Ultimate_LowQualityV02.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sageagent">
+                        <div class="cont">
+                            <div class="ico16"></div>
+                            <p id="SAGE">Sage</p>
+                        </div>
+                        <span class="ordinary">Защитница Китая Sage обеспечивает безопасность команды в бою. Благодаря
+                            возможности воскрешать союзников и сдерживать натиск врага она создает оазис покоя на жутком
+                            поле боя.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q - "СФЕРА ЗАМЕДЛЕНИЯ"
+                                <img class="abico" src="img/Slow_Orb.webp" width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ замедляющую сферу. Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    замедляющую сферу вперед. После падения сфера создает поле, которое замедляет
+                                    игроков.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sage_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "СФЕРА ЛЕЧЕНИЯ"<img class="abico" src="img/Healing_Orb.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ сферу лечения. При наведении на раненого союзника и
+                                    нажатии кнопки ОГОНЬ активирует постепенное восстановление здоровья. Если Sage
+                                    ранена, то нажатие кнопки АЛЬТ. ОГОНЬ активирует эффект постепенного самоисцеления.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sage_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "СФЕРА БАРЬЕРА"
+                                <img class="abico" src="img/Barrier_Orb.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ сферу барьера. Нажмите кнопку ОГОНЬ, чтобы создать
+                                    стену, которая затвердеет через несколько секунд. Нажмите кнопку АЛЬТ. ОГОНЬ, чтобы
+                                    повернуть стену перед установкой.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sage_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ВОСКРЕШЕНИЕ"<img class="abico" src="img/Resurrection.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ воскрешающее умение. Наведите прицел на погибшего
+                                    союзника и нажмите кнопку ОГОНЬ, чтобы начать воскрешение. После небольшой задержки
+                                    цель вернется к жизни с полным запасом здоровья.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Sage_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controllers">
+                <input type="checkbox" id="menu4">
+                <label for="menu4"> <img
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63e21ca9443dce8e/5eb270f43b09c042ddca1353/Controller.png"
+                        width="40px" /> Специалисты <span class="click"></span></label>
+                <div class="menu-content4">
+                    <div class="navsen">
+                        <ul>
+                            <li><a href="#ASTRA">Astra</a></li>
+                            <li><a href="#BRIM">Brimstone</a></li>
+                            <li><a href="#HARBOR">Harbor</a></li>
+                            <li><a href="#OMEN">Omen</a></li>
+                            <li><a href="#VIPER">Viper</a></li>
+                        </ul>
+                    </div>
+                    <div class="astraagent">
+                        <div class="cont">
+                            <div class="ico17"></div>
+                            <p id="ASTRA">Astra</p>
+                        </div>
+                        <p class="ordinary">
+                            Astra управляет энергией, пространством и временем, меняя поле битвы по своему желанию.
+                            Полный контроль над астральной формой и талант стратегического предвидения позволяют агенту
+                            из Ганы опережать врага на целую вечность.
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ВЗРЫВ СВЕРХНОВОЙ"<img class="abico" src="img/Nova_Pulse.webp" width="40px" />
+                                <br>
+                                <span class="ordinary">Разместите звезды в Астральной форме (X) АКТИВИРУЙТЕ звезду,
+                                    чтобы вызвать "Взрыв свехновой". Он быстро заряжается и оглушает всех игроков в зоне
+                                    действия.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/RIFT21_Astra_Ability_Q.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ТУМАННОСТЬ"<img class="abico" src="img/Nebula_-_Dissipate.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">Разместите звезды в Астральной форме (X) АКТИВИРУЙТЕ звезду,
+                                    чтобы преобразовать ее в "Туманность" (дым). Выберите звезду и нажмите клавишу (F),
+                                    чтобы вызвать "Рассеивание". Звезда возвращается и может быть размещена в другом
+                                    месте через некоторое время. Перед возвращением звезды "Рассеивание" на короткое
+                                    время формирует ложную "Туманность" на месте звезды.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/RIFT21_Astra_Ability_Q.mp4" loop="loop"></video>
+
+                            </p>
+                            <p class="left">C – "ГРАВИТАЦИОННЫЙ КОЛОДЕЦ""<img class="abico"
+                                    src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9cb14de8632bd26e/6039aab70efbd9779b028ad1/Astra_Ability_Icons_C_GravityWellv2.png"
+                                    width="40px" /><br>
+                                <span class="ordinary">Разместите звезды в Астральной форме (X) АКТИВИРУЙТЕ звезду,
+                                    чтобы создать "Гравитационный колодец". Игроки в области действия притягиваются к
+                                    центру. Затем "Гравитационный колодец" взрывается, ослабляя игроков внутри.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/RIFT21_Astra_Ability_C.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "АСТРАЛЬНАЯ ФОРМА / ПРОСТРАНСТВЕННЫЙ РАЗЛОМ"<img class="abico"
+                                    src="img/Cosmic_Divide.webp" width="40px" /><br>
+                                <span class="ordinary">Нажмите кнопку "АКТИВИРОВАТЬ" (X), чтобы войти в Астральную форму
+                                    и разместить звезды с помощью кнопки ОСНОВНОГО РЕЖИМА СТРЕЛЬБЫ. Затем звезды можно
+                                    снова активировать, чтобы создать "Импульс новой", "Туманность" или "Гравитационный
+                                    колодец". Когда "Пространственный разлом" заряжен, используйте кнопку ДОП. РЕЖИМА
+                                    СТРЕЛЬБЫ в Астральной форме для выбора первой точки, а затем кнопку ОСНОВНОГО РЕЖИМА
+                                    СТРЕЛЬБЫ для выбора второй точки. Возникнет "Пространственный разлом", который
+                                    проходит через выбранные точки. "Пространственный разлом" блокирует пули и сильно
+                                    снижает громкость звуков.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/RIFT21_Astra_Ability_ULT.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="brimagent">
+                        <div class="cont">
+                            <div class="ico18"></div>
+                            <p id="BRIM">Brimstone</p>
+                        </div>
+                        <span class="ordinary">Уроженец США Brimstone обеспечивает своей команде преимущество перед
+                            противником благодаря орбитальной технике. Возможность удаленно оказывать помощь там, где
+                            это требуется, делает его несравненным боевым командиром.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ЗАЖИГАТЕЛЬНАЯ ГРАНАТА"<img class="abico" src="img/BRIM_Q.webp" width="40px" />
+                                <br>
+                                <span class="ordinary">ВЫБИРАЕТ зажигательный гранатомет. Нажмите кнопку ОГОНЬ, чтобы
+                                    запустить гранату, которая падает и взрывается после остановки, образуя горящую
+                                    область, в которой все игроки получают урон.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Brimstone_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "НЕБЕСНЫЙ ДЫМ"<img class="abico" src="img/BRIM_E.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ тактическую карту. Нажмите кнопку ОГОНЬ, чтобы указать
+                                    места на карте для сброса дымовой завесы. Нажмите кнопку АЛЬТ. ОГОНЬ, чтобы
+                                    запустить несколько дымовых завес продолжительного действия, застилающих обзор в
+                                    указанной области.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Brimstone_E_v001_web.mp4" loop="loop"></video>
+                            </p>
+                            <p class="left">C – "МАЯЧОК-СТИМУЛЯТОР"<img class="abico" src="img/BRIM_C.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">МГНОВЕННО бросает себе под ноги маячок-стимулятор. После
+                                    приземления маячок повышает скорострельность и скорость передвижения ближайших
+                                    игроков.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Brimstone_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ОРБИТАЛЬНЫЙ УДАР"<img class="abico" src="img/BRIM_X.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ тактическую карту. Нажмите кнопку ОГОНЬ, чтобы запустить
+                                    орбитальный удар, наносящий высокий периодический урон игрокам, находящимся в
+                                    выбранной зоне.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted
+                                    src="vid/Brimstone_X_v001_web.mp4" loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="harbagent">
+                        <div class="cont">
+                            <div class="ico19"></div>
+                            <p id="HARBOR">Harbor</p>
+                        </div>
+                        <span class="ordinary">
+                            Агент Harbor с индийского побережья обрушивает бурю на поле боя, используя древнюю
+                            технологию управления водой. Он повелевает бурлящими потоками и сокрушительными волнами,
+                            чтобы защитить союзников и разгромить противников.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q – "ЗАЛИВ"
+                                <img class="abico" src="img/Cove.webp" width="40px" /><br>
+                                <span class="ordinary"> ВВЫБИРАЕТ защитную водяную сферу. Нажмите кнопку ОГОНЬ, чтобы
+                                    бросить сферу. Нажмите кнопку АЛЬТ. ОГОНЬ, чтобы сделать бросок снизу. При
+                                    столкновении с землей сфера образует разрушаемый водяной щит, блокирующий пули.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Harbor_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ГРЕБЕНЬ ВОЛНЫ"<img class="abico" src="img/High_Tide.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ водяную стену. Нажмите кнопку ОГОНЬ, чтобы отправить
+                                    вперед по земле мощный поток воды. УДЕРЖИВАЙТЕ кнопку ОГОНЬ, чтобы перемещать поток
+                                    в направлении прицела и создать стену вдоль этой траектории. Нажмите кнопку АЛЬТ.
+                                    ОГОНЬ во время создания траектории, чтобы остановить поток. Игроки, которых
+                                    коснулась вода, ЗАМЕДЛЯЮТСЯ.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Harbor_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "КАСКАД"
+                                <img class="abico" src="img/Cascade.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ волну, проходящую сквозь стены. Нажмите кнопку ОГОНЬ,
+                                    чтобы отправить волну вперед. Используйте умение ПОВТОРНО, чтобы остановить
+                                    дальнейшее движение волны. Игроки, которых коснулась вода, ЗАМЕДЛЯЮТСЯ.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Harbor_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "РАСЧЕТ НАПРАВЛЕНИЯ"<img class="abico" src="img/Reckoning.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ силу артефакта. Нажмите кнопку ОГОНЬ, чтобы создать на
+                                    земле гейзерное озеро. В зоне действия умения вражеские игроки оказываются под
+                                    прицелом гейзерных ударов. Такой удар ОГЛУШАЕТ цель.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Harbor_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="omenagent">
+                        <div class="cont">
+                            <div class="ico20"></div>
+                            <p id="OMEN">Omen</p>
+                        </div>
+                        <span class="ordinary">Призрак из прошлого Omen наносит удары из тени. Он способен ослеплять
+                            врагов и незаметно перемещаться по полю боя, вселяя страх в сердца противников, тщетно
+                            пытающихся предугадать, откуда он нападет вновь.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q - "ПАРАНОЙЯ"
+                                <img class="abico" src="img/Paranoia.webp" width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ ослепляющую сферу. Нажмите кнопку ОГОНЬ, чтобы бросить
+                                    ее вперед и ненадолго ограничить обзор и слух игроков, которых она коснется. Эта
+                                    сфера может проходить сквозь стены.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Omen_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ТЕМНЫЙ ПОКРОВ"<img class="abico" src="img/Dark_Cover.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ теневую сферу и переходит в иную реальность для выбора
+                                    места ее установки. НАЖМИТЕ клавишу умения, чтобы бросить теневую сферу, которая
+                                    расширяется в выбранной точке, ограничивая обзор. УДЕРЖИВАЙТЕ кнопку ОГОНЬ, чтобы
+                                    увеличить дальность броска сферы. УДЕРЖИВАЙТЕ кнопку АЛЬТ. ОГОНЬ, чтобы бросить
+                                    сферу ближе. НАЖМИТЕ клавишу ПЕРЕЗАРЯДКИ, чтобы переключиться на обычный режим
+                                    прицеливания.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Omen_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "СКРЫТЫЙ ШАГ"
+                                <img class="abico" src="img/Shrouded_Step.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ умение Скрытый шаг и показывает дальность его действия.
+                                    Нажмите кнопку ОГОНЬ, чтобы после небольшой задержки телепортировать агента к
+                                    выбранному месту. Противники услышат звук телепортации только от точки отправления.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Omen_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ИЗ ТЕНИ"<img class="abico" src="img/From_the_Shadows.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ тактическую карту. Нажмите кнопку ОГОНЬ, чтобы начать
+                                    телепортацию к выбранному месту. Во время телепортации Omen предстает в образе тени,
+                                    которая может быть уничтожена врагом для отмены телепортации. Omen также может
+                                    отменить телепортацию НАЖАТИЕМ клавиши умения.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Omen_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="omenagent">
+                        <div class="cont">
+                            <div class="ico21"></div>
+                            <p id="VIPER">Omen</p>
+                        </div>
+                        <span class="ordinary">Химик из США Viper устанавливает контроль над полем боя с помощью
+                            источающих токсичный газ устройств и ограничивает обзор противникам. А тех, кого ей не
+                            удастся отравить, она непременно перехитрит.
+                        </span>
+                        </p>
+                        <div class="abilities">
+                            <p class="left">Способности:</p>
+                            <p>Q - "ЯДОВИТОЕ ОБЛАКО"
+                                <img class="abico" src="img/Poison_Cloud.webp" width="40px" /><br>
+                                <span class="ordinary"> ВЫБИРАЕТ распылитель газа. Нажмите кнопку ОГОНЬ, чтобы выбросить
+                                    распылитель, который остается на месте до конца раунда. Нажмите кнопку АЛЬТ. ОГОНЬ,
+                                    чтобы сделать бросок снизу. Примените умение повторно, чтобы выпустить из
+                                    распылителя облако ядовитого дыма, расходуя топливо. Можно использовать больше
+                                    одного раза, а также подобрать и РАЗМЕСТИТЬ ЗАНОВО.
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Viper_Q_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">E – "ТОКСИЧНАЯ ЗАВЕСА"<img class="abico" src="img/Toxic_Screen.webp"
+                                    width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ распылители газа, проникающие сквозь препятствия.
+                                    Нажмите кнопку ОГОНЬ, чтобы выстрелить длинной очередью распылителей. При повторном
+                                    использовании распылители образуют стену ядовитого дыма, расходуя топливо. Умение
+                                    можно применять больше одного раза.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Viper_E_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                            <p class="left">C – "ЗМЕИНЫЙ УКУС"
+                                <img class="abico" src="img/Snake_Bite.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ капсулу с кислотой. Нажмите кнопку ОГОНЬ, чтобы
+                                    запустить капсулу, которая разбивается при падении, оставляя после себя лужу
+                                    кислоты. Попавшие в кислоту противники получают урон и становятся уязвимыми.
+                                </span>
+                            </p>
+                            <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                onmouseout="this.pause();this.currentTime=0;" muted src="vid/Viper_C_v001_web.mp4"
+                                loop="loop"></video>
+                            <p class="right">X – "ГНЕЗДО ГАДЮКИ"
+                                <img class="abico" src="img/Vipers_Pit.webp" width="40px" /><br>
+                                <span class="ordinary">ВЫБИРАЕТ распылитель химикатов. Нажмите кнопку ОГОНЬ, чтобы
+                                    распылить вокруг Viper облако химикатов, уменьшая дальность видимости игроков и
+                                    максимальный запас здоровья находящихся в нем врагов. УДЕРЖИВАЙТЕ кнопку умения,
+                                    чтобы остановить распыление.
+                                </span><br>
+                                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/Viper_X_v001_web.mp4"
+                                    loop="loop"></video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <hr>
+            <p>Made by Egor Provotorov</p>
+            <p>May, 2023 </p>
+        </footer>
+    </div>
+    <div class="standing2"></div>
+
+</body>
+
+</html>

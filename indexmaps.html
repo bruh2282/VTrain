@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Регистрация</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="log">
+                        <input type="text" placeholder="Логин" name="uname" required><br>
+                        <input type="password" placeholder="Пароль" name="psw" required>
+                    </div>
+                    <div class="ok"><a href="">Войти</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="standing1"></div>
+    <div class="whole">
+        <a href="#UPPER"><div class="arrowup"></div></a>
+        <div class="arrrad"></div>
+        <div class="navmap">
+            <ul>
+                <li><a href="#LOTUS">Lotus</a></li>
+                <li><a href="#PEARL">Pearl</a></li>
+                <li><a href="#FRACTURE">Fracture</a></li>
+                <li><a href="#BREEZE">Breeze</a></li>
+                <li><a href="#ICEBOX">Icebox</a></li>
+                <li><a href="#ASCENT">Ascent</a></li>
+                <li><a href="#BIND">Bind</a></li>
+                <li><a href="#SPLIT">Split</a></li>
+                <li><a href="#HAVEN">Haven</a></li>
+            </ul>
+        </div>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fa fa-home"></i></label>
+        <div class="reg">
+            <p><a href="#openModal">Регистрация</a></p>
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.html" class="menuitem">Главная</a></li>
+                <li><a href="indexa.html" class="menuitem">Агенты</a></li>
+                <li><a href="indexmaps.html" class="menuitem">Карты</a></li>
+                <li><a href="#" class="menuitem">Аим</a></li>
+                <li><a href="#" class="menuitem">Стратегия</a></li>
+            </ul>
+        </div>
+        <header>
+            <h1>VL<span class="neon">T</span>ra<span class="neon2">i</span>ner</h1>
+
+        </header>
+        <article>
+            <h2 id="UPPER">Карты</h2>
+            <p class="ordinary">Каждый матч в игре «Valorant» проходит на картах. Каждая из команд начинает на своей
+                базе. Перед началом
+                каждого раунда начинается фаза покупок, которая длится 30 секунд, во время этой фазы стоят барьеры,
+                которые не позволяют агентам покинуть свою базу. <br>
+                Цель матчей — заложить/разминировать Spike в определённых точках карты. <br>
+                Каждая из этих карт дает массу возможностей для реализации
+                изобретательных маневров, напряженных моментов и командных стратегий.
+            </p> <br>
+            <hr>
+            <div class="lotus">
+                <h3 id="LOTUS">Lotus</h3>
+                <div class="mapdes">
+                    <div class="ltsmap"></div>
+                    <div class="minilotus"></div>
+                </div>
+                <p class="ordinary">Lotus – вторая по счёту карта с тремя точками. В отличие от <a
+                        href="#HAVEN">Haven</a> , здесь
+                    появляется третья сфера, которую можно подобрать на миде.</p>
+                <p class="ordinary">Особенностью Lotus являются две механические двери, вращающиеся вокруг своей оси.
+                    Они тратят
+                    восемь секунд, чтобы повернуться на 180 градусов, попутно открывая прежде недоступные проходы.
+                    Двери расположены рядом с точками A и C, а открыть их можно с обеих сторон.</p>
+                <div class="lolgallery"></div><br>
+            </div>
+            <hr>
+            <div class="pearl">
+                <h3 id="PEARL">Pearl</h3>
+                <div class="mapdes">
+                    <div class="prlmap"></div>
+                    <div class="minipearl"></div>
+                </div>
+                <p class="ordinary">Pearl представляет собой карту с тремя линиями и двумя точками. В отличие от
+                    стратегически сложных <a href="#ICEBOX">Icebox</a>, <a href="#BREEZE">Breeze</a> и <a
+                        href="#FRACTURE">Fracture</a>, Pearl позиционируется как классическая карта, на
+                    которой отсутствуют динамические элементы и уникальные механики.</p>
+            </div>
+            <hr>
+            <div class="fracture">
+                <h3 id="FRACTURE">Fracture</h3>
+                <div class="mapdes">
+                    <div class="frctmap"></div>
+                    <div class="minifrct"></div>
+                </div>
+                <p class="ordinary">Fracture - это сверхсекретная экспериментальная лаборатория , ставшая местом
+                    катастрофы, вызванной радианитом. В своей простейшей форме карта отмечена своей H-образной
+                    компоновкой с визуальным разделением посередине, которое показывает контрастные стороны. Длинные
+                    зиплайны также соединяют маршруты внизу. </p>
+            </div>
+            <hr>
+            <div class="breeze">
+                <h3 id="BREEZE">Breeze</h3>
+                <div class="mapdes">
+                    <div class="breezemap"></div>
+                    <div class="minibreeze"></div>
+                </div>
+                <p class="ordinary">Добро пожаловать в тропический рай. Любуйтесь древними руинами, исследуйте морские
+                    пещеры и приводите с собой друзей. Здесь вас ждут открытая местность и перестрелки на дальних
+                    дистанциях, так что помощь лишней точно не будет. Главное – вовремя прикрыть фланги.</p>
+                <p class="ordinary">На данный момент карта не используется в игре и отправлена на переработку. В
+                    дальнейшем она вернется в игру.</p>
+            </div>
+            <hr>
+            <div class="icebox">
+                <h3 id="ICEBOX">Icebox</h3>
+                <div class="mapdes">
+                    <div class="icemap"></div>
+                    <div class="miniice"></div>
+                </div>
+                <p class="ordinary">Вам предстоит сражаться на заброшенной секретной арктической базе Kingdom. Точки для
+                    установки бомбы защищены снегом и металлом. Здесь вам пригодятся хитрость и ловкость. Воспользуйтесь
+                    тросами, чтобы остаться незамеченными или застать врага врасплох.
+                </p>
+                <p class="ordinary">На данный момент карта не используется в игре и отправлена на переработку. В
+                    дальнейшем она вернется в игру.</p>
+            </div>
+            <hr>
+            <div class="ascent">
+                <h3 id="ASCENT">Ascent</h3>
+                <div class="mapdes">
+                    <div class="ascmap"></div>
+                    <div class="miniasc"></div>
+                </div>
+                <p class="ordinary">Две точки Ascent отделены друг от друга открытой площадкой для мелких позиционных
+                    стычек и отстрела противников. Каждая точка может быть усилена герметичными дверьми; после их
+                    активации вам понадобится либо уничтожить их, либо найти другой путь на точку. Ни шагу назад!</p>
+            </div>
+            <hr>
+            <div class="bind">
+                <h3 id="BIND">Bind</h3>
+                <div class="mapdes">
+                    <div class="bndmap"></div>
+                    <div class="minibnd"></div>
+                </div>
+                <p class="ordinary">Карта представляет собой арабский город, захваченный организацией Kingdom. Сама
+                    организация превратила его в центр переработки радионита. Возможно, здесь она создает взрывчатку
+                    Spike.
+                </p>
+            </div>
+            <hr>
+            <div class="split">
+                <h3 id="SPLIT">Split</h3>
+                <div class="mapdes">
+                    <div class="splmap"></div>
+                    <div class="minispl"></div>
+                </div>
+                <p class="ordinary">На этой карте большое значение имеет занятие высот. Две точки отделяет друг от друга
+                    центр с высокими позициями, на которые можно быстро подняться по веревкам. Контроль над каждой
+                    точкой помогут удержать возвышающиеся над ними башни. Не забывайте поглядывать вверх.
+                </p>
+            </div>
+            <hr>
+            <div class="haven">
+                <h3 id="HAVEN">Haven</h3>
+                <div class="mapdes">
+                    <div class="hvmap"></div>
+                    <div class="minihv"></div>
+                </div>
+                <p class="ordinary">Стены забытого монастыря сотрясает шум боя агентов, сражающихся за контроль над
+                    тремя точками. Территории для захвата больше, но защитникам гораздо легче агрессивно пушить
+                    противника.
+                </p>
+            </div>
+        </article>
+       
+        <footer> 
+            <hr>
+            <p>Made by Egor Provotorov</p>
+            <p>May, 2023 </p>
+        </footer>
+    </div>
+    <div class="standing2"></div>
+</body>
+
+</html>
