@@ -34,7 +34,9 @@
     </div>
     <div class="standing1"></div>
     <div class="whole">
-        <a href="#UPPER"><div class="arrowup"></div></a>
+        <a class="upper" href="#UPPER">
+            <div class="arrowup"></div>
+        </a>
         <div class="arrrad"></div>
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><i class="fa fa-home"></i></label>
@@ -46,8 +48,8 @@
                 <li><a href="index.html" class="menuitem">Главная</a></li>
                 <li><a href="indexa.html" class="menuitem">Агенты</a></li>
                 <li><a href="indexmaps.html" class="menuitem">Карты</a></li>
-                <li><a href="#" class="menuitem">Аим</a></li>
-                <li><a href="#" class="menuitem">Стратегия</a></li>
+                <li><a href="indexaim.html" class="menuitem">Аим</a></li>
+                <li><a href="indexstrat.html" class="menuitem">Стратегия</a></li>
             </ul>
         </div>
         <header>
@@ -57,19 +59,25 @@
             <h2 id="UPPER">Агенты:</h2>
             <div class="duelists">
                 <input type="checkbox" id="menu1">
-                <label for="menu1"> <img
+                <label class="named" for="menu1"> <img
                         src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt213441880cf2cdf5/5eaa06851b51e36d7c1b61d4/Duelist.png"
-                        width="40px" /> Дуэлянты <span class="click"></span></label>
+                        width="40px" /> Дуэлянты </label>
                 <div class="menu-content1">
                     <div class="navdul">
-                        <ul>
-                            <li><a href="#JETT">Jett</a></li>
-                            <li><a href="#NEON">Neon</a></li>
-                            <li><a href="#PHOE">Phoenix</a></li>
-                            <li><a href="#RAZE">Raze</a></li>
-                            <li><a href="#REYNA">Reyna</a></li>
-                            <li><a href="#YORU">Yoru</a></li>
-                        </ul>
+                        <div class="frs">
+                            <ul>
+                                <li><a href="#JETT">Jett</a></li>
+                                <li><a href="#NEON">Neon</a></li>
+                                <li><a href="#PHOE">Phoenix</a></li>
+                            </ul>
+                        </div>
+                        <div class="scn">
+                            <ul>
+                                <li><a href="#RAZE">Raze</a></li>
+                                <li><a href="#REYNA">Reyna</a></li>
+                                <li><a href="#YORU">Yoru</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="jettagent">
@@ -500,14 +508,20 @@
                         width="40px" /> Зачинщики <span class="click"></span></label>
                 <div class="menu-content2">
                     <div class="navini">
-                        <ul>
-                            <li><a href="#BREACH">Breach</a></li>
-                            <li><a href="#FADE">Fade</a></li>
-                            <li><a href="#GEKKO">Gekko</a></li>
-                            <li><a href="#KAYO">KAY/O</a></li>
-                            <li><a href="#SKYE">Skye</a></li>
-                            <li><a href="#SOVA">Sova</a></li>
-                        </ul>
+                        <div class="frs">
+                            <ul>
+                                <li><a href="#BREACH">Breach</a></li>
+                                <li><a href="#FADE">Fade</a></li>
+                                <li><a href="#GEKKO">Gekko</a></li>
+                            </ul>
+                        </div>
+                        <div class="scn">
+                            <ul>
+                                <li><a href="#KAYO">KAY/O</a></li>
+                                <li><a href="#SKYE">Skye</a></li>
+                                <li><a href="#SOVA">Sova</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="breachagent">

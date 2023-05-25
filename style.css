@@ -16,7 +16,8 @@ body {
     display: flex;
     justify-content: baseline;
 }
-.mainart a{
+
+.mainart a {
     text-shadow: none;
 }
 
@@ -72,6 +73,11 @@ body {
 #active:checked~.wrapper {
     z-index: 1;
     clip-path: circle(75%);
+}
+
+#active:checked~a {
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #active:checked~article {
@@ -257,10 +263,11 @@ header {
 .reg {
     border-radius: 20px;
     display: flex;
+    box-shadow: 1px 1px 30px white;
     align-items: center;
     position: absolute;
     margin: auto;
-    right: 150px;
+    right: 400px;
     background-color: black;
     width: 200px;
     height: 60px;
@@ -313,6 +320,10 @@ article {
     transition: all 0.3s ease-in-out;
 }
 
+.jettagent {
+    transition: .5s;
+}
+
 .jett {
     transition: all 0.3s ease-in-out;
     margin: 0 10px 0 0;
@@ -321,7 +332,7 @@ article {
     height: 200px;
     background-image: url(img/jett.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 10px;
     left: 10px;
@@ -688,6 +699,7 @@ h3 {
 }
 
 .duelists {
+    transition: .5s;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1347,7 +1359,8 @@ h3 {
     left: 10px;
     animation: imgbrez 10s infinite ease-in-out;
 }
-.minibreeze{
+
+.minibreeze {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     margin: 0 10px 0 0;
@@ -1361,6 +1374,7 @@ h3 {
     border-radius: 10px;
     left: 10px;
 }
+
 .icemap {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
@@ -1480,7 +1494,8 @@ h3 {
     border-radius: 10px;
     left: 10px;
 }
-.hvmap{
+
+.hvmap {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     margin: 0 10px 0 0;
@@ -1495,7 +1510,8 @@ h3 {
     animation: imgspl 10s infinite ease-in-out;
 
 }
-.minihv{
+
+.minihv {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     margin: 0 10px 0 0;
@@ -1541,6 +1557,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgprl {
     0% {
         background-image: url(img/Loading_Screen_Pearl.webp);
@@ -1572,6 +1589,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgfrac {
     0% {
         background-image: url(img/fractureload.png);
@@ -1603,6 +1621,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgbrez {
     0% {
         background-image: url(img/Valorant_Loading_Breeze.png);
@@ -1634,6 +1653,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgice {
     0% {
         background-image: url(img/icebox_1.webp);
@@ -1665,6 +1685,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgasc {
     0% {
         background-image: url(img/Loading_Screen_Ascent.webp);
@@ -1696,6 +1717,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgbnd {
     0% {
         background-image: url(img/Loading_Screen_Bind.webp);
@@ -1727,6 +1749,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imgspl {
     0% {
         background-image: url(img/Loading_Screen_Split_v2.jpg);
@@ -1758,6 +1781,7 @@ h3 {
         background-position: center;
     }
 }
+
 @keyframes imghv {
     0% {
         background-image: url(img/loading_screen_haven.png);
@@ -1788,4 +1812,134 @@ h3 {
         background-size: cover;
         background-position: center;
     }
+}
+
+@media (max-width: 1920px) {
+    .map{
+        width: 300px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+    .reg{
+        box-shadow: 1px 1px 30px white;
+        right: 200px;
+    }
+    .train{
+        width: 275px;
+        height: 150px;
+    }
+    .jett{
+        width: 405px;
+        height: 150px;
+    }
+    .office{
+        width: 275px;
+        height: 140px;
+    }
+    h3,
+    .duelists,
+    .sentinels,
+    .initiators,
+    .controllers,
+    .menu1 {
+        font-size: 30px;
+    }
+
+    .named {
+        font-size: 30px;
+    }
+
+    .arrowup {
+        width: 50px;
+        height: 50px;
+    }
+
+    .arrrad {
+        right: 38px;
+        bottom: 40px;
+    }
+
+    .left,
+    .right,
+    p,
+    a {
+        font-size: 30px;
+    }
+
+    .ordinary {
+        font-size: 25px;
+    }
+
+    .demo {
+        width: 400px;
+    }
+
+    .ltsmap,
+    .icemap,
+    .prlmap,
+    .frctmap,
+    .breezemap,
+    .ascmap,
+    .bndmap,
+    .splmap,
+    .hvmap {
+        width: 600px;
+        height: 300px;
+    }
+
+    .minilotus,
+    .minipearl,
+    .miniice,
+    .minifrct,
+    .minibreeze,
+    .miniasc,
+    .minibnd,
+    .minispl,
+    .minihv {
+        width: 350px;
+        height: 310px;
+    }
+    .navmap{
+        width: 150px;
+    }
+    .navmap ul li{
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navmap{
+        right: 10px;
+        width: 120px;
+    }
+    .navmap ul li {
+        text-align: left;
+    }
+
+    .navmap ul li a{
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    footer{
+        margin-top: 1450px;
+    }
+
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer{
+    margin-top: 1100px;
+}
+.brubruh{
+    margin-top: 100px;
 }

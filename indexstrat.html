@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Регистрация</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="log">
+                        <input type="text" placeholder="Логин" name="uname" required><br>
+                        <input type="password" placeholder="Пароль" name="psw" required>
+                    </div>
+                    <div class="ok"><a href="">Войти</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="standing1"></div>
+    <div class="whole">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fa fa-home"></i></label>
+        <div class="reg">
+            <p><a href="#openModal">Регистрация</a></p>
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.html" class="menuitem">Главная</a></li>
+                <li><a href="indexa.html" class="menuitem">Агенты</a></li>
+                <li><a href="indexmaps.html" class="menuitem">Карты</a></li>
+                <li><a href="indexaim.html" class="menuitem">Аим</a></li>
+                <li><a href="indexstrat.html" class="menuitem">Стратегия</a></li>
+            </ul>
+        </div>
+        <header>
+            <h1>VL<span class="neon">T</span>ra<span class="neon2">i</span>ner</h1>
+        </header>
+        <article>
+            <h2>Стратегии</h2>
+            <p class="ordinary">В Valorant каждый герой имеет свои уникальные возможности и роль в команде. Используя
+                эффективные тактики для каждого героя, вы можете повысить свою эффективность в игре и помочь своей
+                команде достичь победы. Эти советы являются только отправной точкой, поэтому экспериментируйте,
+                разрабатывайте свои стратегии и наслаждайтесь игрой в Valorant!</p>
+            <hr>
+            <div class="jettstrat">
+                <div class="cont">
+                    <div class="ico1"></div>
+                    <p id="JETT">Jett</p>
+                </div>
+                <p class="ordinary">Jett - мобильный и агрессивный герой. Она может использовать свою способность
+                    "ПОДЪЕМ" для быстрого перемещения по карте и получения преимущества в высоте. <br> Сочетайте
+                    "ПОДЪЕМ" с
+                    "ПОПУТНЫЙ ВЕТЕР" для быстрого перемещения и ухода от опасности или же нападения.
+                </p>
+                <p class="ordinary ">Пример правильной комбинации способностей Jett для получения преимущества над
+                    врагом:</p>
+                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" src="vid/updash.mp4" loop="loop"></video>
+            </div>
+            <hr>
+            <div class="phoestrat">
+                <div class="cont">
+                    <div class="ico3"></div>
+                    <p id="PHOE" class="left">Phoenix</p>
+                </div>
+                <p class="ordinary">Phoenix - отличный герой для атаки. Используйте его способность "КРУЧЕНАЯ ПОДАЧА"
+                    для
+                    ослепления противников и создания возможностей для убийств. "ГОРЯЧИЕ РУКИ" позволяет восстанавливать
+                    здоровье и наносить урон противникам, поэтому используйте эту способность в ближнем бою. Когда вы
+                    готовы к атаке, активируйте свою "ВОЗВРАТ", чтобы вернуться к жизни в случае гибели.
+                </p>
+                <p class="ordinary ">Пример хорошего использования способностей Phoenix:</p>
+                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/phoegame - Made with Clipchamp.mp4"
+                    loop="loop"></video>
+            </div>
+            <hr>
+            <div class="sagestrat">
+                <div class="cont">
+                    <div class="ico16"></div>
+                    <p id="SAGE">Sage</p>
+                </div>
+                <p class="ordinary">Sage - поддерживающий герой с мощными областями контроля. Используйте "СФЕРА
+                    ЗАМЕДЛЕНИЯ", чтобы
+                    замедлить противников и создать преимущество для своей команды. "СФЕРА БАРЬЕРА" позволяет
+                    создавать
+                    временные
+                    стены, блокирующие путь противникам и защищающие союзников. Не забывайте использовать
+                    "ВОСКРЕШЕНИЕ" для
+                    возрождения убитых союзников и восстановления численного преимущества.
+                </p>
+                <p class="ordinary ">Пример интересной "стенки" Sage:</p>
+                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/sagegame - Made with Clipchamp.mp4"
+                    loop="loop"></video>
+            </div>
+            <hr>
+            <div class="kjstrat">
+                <div class="cont">
+                    <div class="ico15"></div>
+                    <p id="SAGE">Killjoy</p>
+                </div>
+                <p class="ordinary">Killjoy - оборонительный герой, специализирующийся на контроле зоны. Разместите
+                    "ТРЕВОГОБОТ" и "ТУРЕЛЬ" в ключевых точках карты, чтобы получать информацию о противниках и наносить
+                    им
+                    урон. Используйте "УЛЕЙ" в сочетании с "БЛОКИРОВКА" для создания смертоносных ловушек, которые
+                    заставят противников передумать атаковать.
+                </p>
+                <p class="ordinary ">Пример хорошего "сетапа" Killjoy:</p>
+                <video class="demo" preload=" metadata" video onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted src="vid/KJSETUP - Made with Clipchamp.mp4"
+                    loop="loop"></video>
+            </div>
+            <hr>
+            <p>Это лишь пара простых советов и примеров использования способностей агентов на различных картах и в
+                разных ситуациях.</p>
+            <p>Существует бесконечное множество стратегий, и если у вас есть желание их изучить, на просторах интернета
+                есть миллион стратегий, которые придутся вам по душе (их просто невозможно уместить в мой маленький
+                сайтик).</p>
+        </article>
+        <footer>
+            <hr>
+            <p>Made by Egor Provotorov</p>
+            <p>May, 2023 </p>
+        </footer>
+    </div>
+    <div class="standing2"></div>
+
+</body>
+
+</html>
